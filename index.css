@@ -1,0 +1,29 @@
+#primary {
+    margin-top: 20px;
+}
+
+h3 {
+    margin-left: 15px;
+}
+
+p {
+    margin-left: 15px;
+}
+
+h5 {
+    margin-left: 15px;
+}
+
+.btn {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+ul {
+    margin-left: 25px;
+}
+
+img {
+    height: 100px;
+    margin-left: 30px;
+}

@@ -1,0 +1,27 @@
+{
+  "liked": [
+    {
+      "beer": "XXXX Gold",
+      "id": 1
+    },
+    {
+      "beer": "Shareholder Black IPA 2011",
+      "id": 2
+    },
+    {
+      "beer": "Doodlebug",
+      "id": 3
+    },
+    {
+      "beer": "AB:11",
+      "id": 4
+    },
+    {
+      "beer": {
+        "Name": "Sonic Boom",
+        "Description": "Welcome aboard our experimental range of tuned IPAs. Buckle up for an explosive sensory bombardment. Tropical fruit and resinous pine are primed. The first wave of pineapple, melon and mango quickly accelerate into a afterburner of candied citrus fruit and sweet caramel. Sonic Boom - IPA turning at the speed of sound."
+      },
+      "id": 5
+    }
+  ]
+}
