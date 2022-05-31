@@ -6,12 +6,12 @@ const beers = () => document.getElementById("all-beers")
 let likedBeers = [];
 
 // event listeners
-function randomBeerClickEvent() {
-    randomGeneratorLink().addEventListener("click", fetchRandomBeer);
-}
-
 function returnToHome() {
     homePage().addEventListener("click", renderHomePage);
+}
+
+function randomBeerClickEvent() {
+    randomGeneratorLink().addEventListener("click", fetchRandomBeer);
 }
 
 function allBeersPage() {
@@ -37,14 +37,20 @@ function renderHomePage() {
 }
 
 function renderBeerPage(beer) {
+    console.log(beer)
     resetPrimaryDiv();
 
     const h3 = document.createElement("h3");
     const p = document.createElement("p");
+    const p1 = document.createElement("p");
+    const img = document.createElement("img")
     const btn = document.createElement("button")
     
     h3.innerText = "Random Beer"
-    p.innerText = beer;
+    p.innerText = `beer name: ${beer.name}`
+    p1.innerText = `Description: ${beer.description}`
+    img.src = (beer.image_url)
+
     btn.innerText = "Sounds Tasty!"
     btn.classList.add("btn")
 
@@ -52,6 +58,7 @@ function renderBeerPage(beer) {
   
     primaryDiv().appendChild(h3);
     primaryDiv().appendChild(p);
+    primaryDiv().appendChild(p1);
     primaryDiv().appendChild(btn);
 }
 
@@ -89,7 +96,7 @@ const fetchRandomBeer = () => {
     fetch("https://api.punkapi.com/v2/beers/random")
         .then(resp => resp.json())
         .then(data => {
-           renderBeerPage(data[0].name)
+           renderBeerPage(data[0])
         })
 }
 
