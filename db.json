@@ -33,6 +33,10 @@
     {
       "beer": "Fake Lager",
       "id": 8
+    },
+    {
+      "beer": "Magic Stone Dog (w/Magic Rock & Stone Brewing Co.)",
+      "id": 9
     }
   ]
 }
