@@ -37,7 +37,7 @@ function renderHomePage() {
 }
 
 function renderBeerPage(beer) {
-    console.log(beer)
+    console.log(beer.name)
     resetPrimaryDiv();
 
     const h3 = document.createElement("h3");
@@ -47,7 +47,7 @@ function renderBeerPage(beer) {
     const btn = document.createElement("button")
     
     h3.innerText = "Random Beer"
-    p.innerText = `beer name: ${beer.name}`
+    p.innerText = `Beer Name: ${beer.name}`
     p1.innerText = `Description: ${beer.description}`
     img.src = (beer.image_url)
 
@@ -113,7 +113,7 @@ const tastyBeer = beer => {
             "Accept": "application/json",
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({beer: beer})
+        body: JSON.stringify({beer: beer.name})
     })
     .then(resp =>resp.json())
     .then(data => {
