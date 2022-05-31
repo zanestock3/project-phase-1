@@ -53,6 +53,22 @@
     {
       "beer": "Neon Overlord",
       "id": 13
+    },
+    {
+      "beer": "Bramling X",
+      "id": 14
+    },
+    {
+      "beer": "Mixtape 8",
+      "id": 15
+    },
+    {
+      "beer": "San Diego Scotch Ale (w/Ballast Point)",
+      "id": 16
+    },
+    {
+      "beer": "AB:02",
+      "id": 17
     }
   ]
 }

@@ -37,7 +37,7 @@ function renderHomePage() {
 }
 
 function renderBeerPage(beer) {
-    console.log(beer.name)
+    console.log(beer)
     resetPrimaryDiv();
 
     const h3 = document.createElement("h3");
@@ -45,6 +45,7 @@ function renderBeerPage(beer) {
     const p1 = document.createElement("p");
     const p2 = document.createElement("p");
     const img = document.createElement("img")
+    const p3 = document.createElement("p")
     const btn = document.createElement("button")
     
     h3.innerText = "Random Beer"
@@ -52,6 +53,7 @@ function renderBeerPage(beer) {
     p1.innerText = `Description: ${beer.description}`
     p2.innerText = `ABV: ${beer.abv}`
     img.src = (beer.image_url)
+    p3.innerText = " "
 
     btn.innerText = "Sounds Tasty!"
     btn.classList.add("btn")
@@ -62,6 +64,8 @@ function renderBeerPage(beer) {
     primaryDiv().appendChild(p);
     primaryDiv().appendChild(p1);
     primaryDiv().appendChild(p2);
+    primaryDiv().appendChild(img);
+    primaryDiv().appendChild(p3);
     primaryDiv().appendChild(btn);
 }
 
