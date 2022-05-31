@@ -43,12 +43,14 @@ function renderBeerPage(beer) {
     const h3 = document.createElement("h3");
     const p = document.createElement("p");
     const p1 = document.createElement("p");
+    const p2 = document.createElement("p");
     const img = document.createElement("img")
     const btn = document.createElement("button")
     
     h3.innerText = "Random Beer"
     p.innerText = `Beer Name: ${beer.name}`
     p1.innerText = `Description: ${beer.description}`
+    p2.innerText = `ABV: ${beer.abv}`
     img.src = (beer.image_url)
 
     btn.innerText = "Sounds Tasty!"
@@ -59,6 +61,7 @@ function renderBeerPage(beer) {
     primaryDiv().appendChild(h3);
     primaryDiv().appendChild(p);
     primaryDiv().appendChild(p1);
+    primaryDiv().appendChild(p2);
     primaryDiv().appendChild(btn);
 }
 

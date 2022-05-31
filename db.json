@@ -37,6 +37,22 @@
     {
       "beer": "Magic Stone Dog (w/Magic Rock & Stone Brewing Co.)",
       "id": 9
+    },
+    {
+      "beer": "Punk Monk",
+      "id": 10
+    },
+    {
+      "beer": "Libertine Black Ale",
+      "id": 11
+    },
+    {
+      "beer": "Vice Bier",
+      "id": 12
+    },
+    {
+      "beer": "Neon Overlord",
+      "id": 13
     }
   ]
 }
