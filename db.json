@@ -5,70 +5,12 @@
       "id": 1
     },
     {
-      "beer": "Tokyo*",
+      "beer": "Bourbon Baby",
       "id": 2
     },
     {
-      "beer": "White Noise",
+      "beer": "Ace Of Equinox",
       "id": 3
-    },
-    {
-      "beer": "Hello My Name Is Ingrid 2016",
-      "id": 4
-    },
-    {
-      "beer": [
-        "AB:23"
-      ],
-      "id": 5
-    },
-    {
-      "beer": "Ella - IPA Is Dead",
-      "id": 6
-    },
-    {
-      "beer": "U-Boat (w/ Victory Brewing)",
-      "id": 7
-    },
-    {
-      "beer": "Fake Lager",
-      "id": 8
-    },
-    {
-      "beer": "Magic Stone Dog (w/Magic Rock & Stone Brewing Co.)",
-      "id": 9
-    },
-    {
-      "beer": "Punk Monk",
-      "id": 10
-    },
-    {
-      "beer": "Libertine Black Ale",
-      "id": 11
-    },
-    {
-      "beer": "Vice Bier",
-      "id": 12
-    },
-    {
-      "beer": "Neon Overlord",
-      "id": 13
-    },
-    {
-      "beer": "Bramling X",
-      "id": 14
-    },
-    {
-      "beer": "Mixtape 8",
-      "id": 15
-    },
-    {
-      "beer": "San Diego Scotch Ale (w/Ballast Point)",
-      "id": 16
-    },
-    {
-      "beer": "AB:02",
-      "id": 17
     }
   ]
 }
