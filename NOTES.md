@@ -1,23 +1,19 @@
-### Random Meme Generator
+### Random Beer Generator
 
-An open auth API which has a list of memes which I can pull to access them all, click function to see a different meme every time with the ability to delete a meme if you don't lile it t all. Maybe be able to comment on joke as well.
+An open auth API which has a list of beer which I can pull to access them all, click function to see a different meme every time with the ability to like a beer and save it to your individual list. You can then access this list to purchase any of the beers that interested you.
 
 ### Features
-* Random Meme API
-* Show Random Meme (DOMContentLoaded)
-* Like meme (click)
-* Delete meme (click)
-* Comment on meme (submit) (need a json server)
+* Random Beer API
+* Show Random Beer (DOMContentLoaded)
+* Like beer (click)
+* Submit beer to liked list (submit)
+* Delete beer (click)
+*
 
 ### MVP
-* Going to need to load the jokes
-* Show Random Meme (DOMContentLoaded)
-* Delete meme (click)
-* Comment on meme (submit) (need a json server)
-
-
-### Stretch
-* Like meme (click)
+* Need to Load the random Beer into the 'Random Beer' page
+* Show Random Beer (DOMContentLoaded)
+* Save the liked beers into the 'Favorites Beers' page.
 
 ### CSS
 * https://materializecss.com/

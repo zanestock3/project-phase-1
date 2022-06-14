@@ -7,5 +7,8 @@
 # Installation Instructions
     - Fork and clone
     - Run json server for db.json
+        ```
+        json-server --watch db.json
+        ```
     - open index.html in the browser
 

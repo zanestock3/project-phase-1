@@ -37,7 +37,6 @@ function renderHomePage() {
 }
 
 function renderBeerPage(beer) {
-    console.log(beer)
     resetPrimaryDiv();
 
     const h3 = document.createElement("h3");
