@@ -1,6 +1,6 @@
 ### Random Beer Generator
 
-An open auth API which has a list of beer which I can pull to access them all, click function to see a different meme every time with the ability to like a beer and save it to your individual list. You can then access this list to purchase any of the beers that interested you.
+An open auth API which has a list of beer which I can pull to access them all, click function to see a different beer every time with the ability to like a beer and save it to your individual list. You can then access this list to purchase any of the beers that interested you.
 
 ### Features
 * Random Beer API
