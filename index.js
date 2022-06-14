@@ -36,7 +36,7 @@ function renderHomePage() {
     primaryDiv().appendChild(img);
 }
 
-function renderBeerPage(beer) {
+function renderBeerPage(fetchedBeer) {
     resetPrimaryDiv();
 
     const h3 = document.createElement("h3");
@@ -48,16 +48,16 @@ function renderBeerPage(beer) {
     const btn = document.createElement("button")
     
     h3.innerText = "Random Beer"
-    p.innerText = `Beer Name: ${beer.name}`
-    p1.innerText = `Description: ${beer.description}`
-    p2.innerText = `ABV: ${beer.abv}`
-    img.src = (beer.image_url)
+    p.innerText = `Beer Name: ${fetchedBeer.name}`
+    p1.innerText = `Description: ${fetchedBeer.description}`
+    p2.innerText = `ABV: ${fetchedBeer.abv}`
+    img.src = (fetchedBeer.image_url)
     p3.innerText = " "
 
     btn.innerText = "Sounds Tasty!"
     btn.classList.add("btn")
 
-    btn.addEventListener("click", () => tastyBeer(beer)); 
+    btn.addEventListener("click", () => tastyBeer(fetchedBeer)); 
   
     primaryDiv().appendChild(h3);
     primaryDiv().appendChild(p);
@@ -87,13 +87,13 @@ function renderAllBeers() {
 // Render and iterate over the liked beers
 const renderBeer = () => {
     const ul = document.createElement("ul");
-    likedBeers.forEach(beer => newRenderBeer(beer, ul))
+    likedBeers.forEach(fetchedBeer => newRenderBeer(fetchedBeer, ul))
     primaryDiv().appendChild(ul);
 }
 
-const newRenderBeer = (beer, ul) => {
+const newRenderBeer = (fetchedBeer, ul) => {
     const li = document.createElement("li");
-    li.innerText = beer.beer
+    li.innerText = fetchedBeer.beer
     ul.appendChild(li);
 }
 
@@ -112,14 +112,14 @@ const fetchLikedBeer = () => {
     .then(data => likedBeers = data);
 }
 
-const tastyBeer = beer => {
+const tastyBeer = fetchedBeer => {
     fetch ("http://localhost:3000/liked", {
         method: "POST",
         headers: {
             "Accept": "application/json",
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({beer: beer.name})
+        body: JSON.stringify({beer: fetchedBeer.name})
     })
     .then(resp =>resp.json())
     .then(data => {
